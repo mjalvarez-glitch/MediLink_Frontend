@@ -23,7 +23,7 @@ export default function LoginPage() {
   
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    alert("Form submitted!");
+    // alert("Form submitted!");
     setError('');
     setLoading(true);
 
