@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { getToken, removeToken } from "../lib/auth";
 import { fetchWithAuth } from "../lib/fetchWithAuth";
 import { API_BASE } from "../lib/config";
+import Image from "next/image";
 
 type User = {
   id: number;
@@ -155,7 +156,7 @@ export default function Sidebar() {
         style={{ borderBottom: "0.5px solid rgba(255,255,255,0.07)" }}
       >
         <div className="flex items-center gap-2 mb-1">
-          <div className="w-2 h-2 rounded-full bg-blue-500" />
+          <Image src="/MediLink Logo.png" alt="MediLink Logo" height={40} width={40}/>
           <span
             className="text-white text-lg font-semibold"
             style={{ fontFamily: "Arial" }}

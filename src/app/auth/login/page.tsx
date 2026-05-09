@@ -9,6 +9,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 import { AUTH_BASE } from '../../../lib/config';
 import { FormEvent } from "react";
+import Image from "next/image";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -88,7 +89,7 @@ export default function LoginPage() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <div className="w-2.5 h-2.5 rounded-full bg-blue-500" />
+            <Image src="/MediLink Logo.png" alt="MediLink Logo" height={50} width={50}/>
 
             <span
               className="text-white text-3xl font-semibold"
